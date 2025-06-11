@@ -31,7 +31,7 @@ export default defineNuxtConfig({
       installPrompt: true,
     },
   },
-  modules: ["@pinia/nuxt", "@vite-pwa/nuxt", "@vueuse/nuxt"],
+  modules: ["@pinia/nuxt", "@vite-pwa/nuxt", "@vueuse/nuxt", "nuxt-swiper"],
   css: ["~/assets/scss/main.scss"],
   compatibilityDate: "2025-05-15",
   devtools: { enabled: false },
