@@ -1,11 +1,11 @@
-import { EBaseModals } from "~/types/modals/enums";
-import type { ModalConfigType } from "~/types/modals/types";
-import Test from "~/components/modules/test/Test.vue";
+import Test from '~/components/modules/test/Test.vue';
+import { EBaseModals } from '~/types/modals/enums';
+import type { ModalConfigType } from '~/types/modals/types';
 
 export const ModalConfig: ModalConfigType = {
   [EBaseModals.login]: {
     head: {
-      title: "Login",
+      title: 'Login',
       hasCloseButton: true,
     },
     body: {
@@ -13,13 +13,14 @@ export const ModalConfig: ModalConfigType = {
     },
     hasOutsideClose: true,
     canBeCloseByEscape: true,
+    width: 800,
     props: {
       userId: 1,
     },
   },
   [EBaseModals.register]: {
     head: {
-      title: "Register",
+      title: 'Register',
       hasCloseButton: true,
     },
     body: {

@@ -1,5 +1,5 @@
-import type { Component } from "vue";
-import type { EBaseModals } from "./enums";
+import type { Component } from 'vue';
+import type { EBaseModals, EModalPosition } from './enums';
 
 type keyType = keyof typeof EBaseModals;
 
@@ -18,6 +18,8 @@ export interface IModal {
   };
   hasOutsideClose?: boolean;
   canBeCloseByEscape?: boolean;
+  width?: number;
+  position?: keyof typeof EModalPosition;
   props?: {
     [key: string]: any;
   };
