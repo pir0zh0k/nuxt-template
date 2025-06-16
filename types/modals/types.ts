@@ -1,4 +1,3 @@
-import type { Component } from "vue";
 import type { EBaseModals } from "./enums";
 
 type keyType = keyof typeof EBaseModals;
